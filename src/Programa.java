@@ -4,7 +4,7 @@ public class Programa {
         int column = 100;
 
         int matrix[][] = buildMatrix(row, column);
-        int patternMatrix[][] = buildMatrix(3,2);
+        int patternMatrix[][] = buildMatrix(2,2);
 
         int[][] matrixTest = {
                 {0,0,1,0,0,0,0,1,0},
@@ -47,7 +47,7 @@ public class Programa {
         int[][] matrix = new int[rows][columns];
         for(int i = 0; i < rows; i++) {
             for (int y = 0; y < columns; y++) {
-                matrix[i][y] = (int)(Math.random() * 3);
+                matrix[i][y] = (int)(Math.random() * 2);
             }
         }
         return matrix;

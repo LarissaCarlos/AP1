@@ -4,7 +4,7 @@ public class Programa {
         int column = 100;
 
         int matrix[][] = buildMatrix(row, column);
-        int patternMatrix[][] = buildMatrix(2,2);
+        int patternMatrix[][] = buildMatrix(2,3);
 
         int[][] matrixTest = {
                 {0,0,1,0,0,0,0,1,0},
@@ -23,12 +23,6 @@ public class Programa {
                 {1,0},
                 {0,1}
         };
-
-        // para usar a matriz de teste, descomente esse bloco de código
-        // printMatrix(matrixTest, row, column);
-        // System.out.println("-----------------------------");
-        // printMatrix(patternTest, patternTest.length, patternTest.length);
-        //findPattern(matrixTest, patternTest, matrixTest.length, matrixTest.length);
 
         printMatrix(matrix, row, column);
         System.out.println("-----------------------------");

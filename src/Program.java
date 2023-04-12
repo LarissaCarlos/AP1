@@ -5,7 +5,7 @@ public class Program {
         int column = 100;
 
         int matrix[][] = buildMatrix(row, column);
-        int patternMatrix[][] = buildMatrix(2,3);
+        int patternMatrix[][] = buildMatrix(3,2);
 //matriz exemplo
         int[][] matrixTest = {
                 {0,0,1,0,0,0,0,1,0},
@@ -27,7 +27,7 @@ public class Program {
 
         printMatrix(matrix, row, column);
         System.out.println("-----------------------------");
-        printMatrix(patternMatrix, patternMatrix.length, patternMatrix.length);
+        printMatrix(patternMatrix, patternMatrix.length, patternMatrix[0].length);
 
 // add cronometro
         double startTime = System.nanoTime();
